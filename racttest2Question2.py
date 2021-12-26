@@ -1,5 +1,5 @@
 import calendar
-input_date = input().split()
+input_date = input().split() #using the split function we splited the input into date month year (eg. 01 01 2021)
 M = int(input_date[0])
 D = int(input_date[1])
 Y = int(input_date[2])
