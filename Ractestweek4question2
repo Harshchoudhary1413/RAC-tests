@@ -1,0 +1,9 @@
+#Ractestweek4 question2
+#Validating phone numbers
+
+import re
+for _ in range(int(input())):
+    if re.match(r'[789]\d{9}$',input()): #conditon for ten digit number with starting with 7,8 or 9 
+        print('YES')  
+    else:  
+        print('NO')
