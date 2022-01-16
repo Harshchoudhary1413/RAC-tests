@@ -1,0 +1,17 @@
+#Ractestweek4 ques3
+#Standardize Mobile number using decorators
+
+
+def wrapper(f):
+    def fun(l):
+        f(['+91 ' + c[-10:-5] + ' ' + c[-5:] for c in l]) #[-10:-5] gives the numbers with index number from 10 to 5 from rightside(- sign : right side),[-5:] gives the numbers from index 5 to the start from right side.] 
+
+    return fun
+
+@wrapper
+def sort_phone(l):
+    print(*sorted(l), sep='\n')
+
+if __name__ == '__main__':
+    l = [input() for _ in range(int(input()))]
+    sort_phone(l)
